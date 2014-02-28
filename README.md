@@ -1,4 +1,4 @@
-sass.isFile
+compass.isFile
 ===========
 
 画像などのファイルが存在しているかをチェックしてくれるrubyの拡張
