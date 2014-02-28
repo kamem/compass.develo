@@ -1,0 +1,17 @@
+@charset "utf-8";
+@import "import";
+
+$img: img1,img2,img3,img4,img5,img6,img7,img8,img9,img10;
+$num: 0;
+ol li {
+	text-indent: -9999px;
+	@each $name in $img {
+	    $num: $num + 1;	    &#{':nth-child(' + $num + ')'} {
+	    	@if isFile('html/img/' + $name + '.gif') == 'true' {
+		    	background: image-url($name + '.gif') no-repeat center center;
+		    }
+	    }
+	}
+}
+
+
