@@ -1,11 +1,13 @@
-compass.isFile
+compass.develo
 ===========
 
-画像などのファイルが存在しているかをチェックしてくれるrubyの拡張
+便利なカスタム関数集
 
 
-仕様・使い方
+compass.isFile
 ------
+
+### 仕様・使い方
 1. config.rbに記述
 
 		require "./rb/isFile.rb"
