@@ -6,11 +6,12 @@ $num: 0;
 ol li {
 	text-indent: -9999px;
 	@each $name in $img {
-	    $num: $num + 1;	    &#{':nth-child(' + $num + ')'} {
-	    	@if isFile('html/img/' + $name + '.gif') == 'true' {
+		$num: $num + 1;
+		&#{':nth-child(' + $num + ')'} {
+			@if isFile('html/img/' + $name + '.gif') == 'true' {
 		    	background: image-url($name + '.gif') no-repeat center center;
 		    }
-	    }
+		}
 	}
 }
 
