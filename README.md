@@ -9,7 +9,6 @@ compass.develo
 
 		require "./rb/develo.rb"
 
-
 isFile
 ------
 1. isFile('fileName')で ture or false が文字列で返って来ます。
@@ -37,7 +36,7 @@ fileList
 				background: image-url("#{$img}.gif");
 			}
 		}
-}
+	}
 
 ライセンス
 ----------
