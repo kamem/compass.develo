@@ -22,7 +22,7 @@ $num: 0;
 // fileList Test
 //----------------------------------------
 $images_dir: 'html/img/';
-$imgs: fileList($images_dir + "*",false,'.gif');
+$imgs: fileList($images_dir + "*.gif",false,'.gif');
 
 .fileList li {
 	text-indent: -9999px;

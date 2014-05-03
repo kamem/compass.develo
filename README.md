@@ -28,7 +28,7 @@ fileList
 
 ### 実際に使う
 	$images_dir: 'html/img/';
-	$imgs: fileList($images_dir + "*",false,'.gif');
+	$imgs: fileList($images_dir + "*.gif",false,'.gif');
 	
 	.fileList li {
 		@each $img in $imgs {
