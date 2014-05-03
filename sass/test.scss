@@ -1,18 +1,34 @@
 @charset "utf-8";
 @import "import";
 
-$img: img1,img2,img3,img4,img5,img6,img7,img8,img9,img10;
+//----------------------------------------
+// isFile Test
+//----------------------------------------
+$imgs: img1,img2,img3,img4,img5,img6,img7,img8,img9,img10;
 $num: 0;
-ol li {
+.isFile li {
 	text-indent: -9999px;
-	@each $name in $img {
+	@each $name in $imgs {
 		$num: $num + 1;
 		&#{':nth-child(' + $num + ')'} {
 			@if isFile('html/img/' + $name + '.gif') == 'true' {
-		    	background: image-url($name + '.gif') no-repeat center center;
+		    	background: image-url($name + '.gif');
 		    }
 		}
 	}
 }
 
+//----------------------------------------
+// fileList Test
+//----------------------------------------
+$images_dir: 'html/img/';
+$imgs: fileList($images_dir + "*",false,'.gif');
 
+.fileList li {
+	text-indent: -9999px;
+	@each $img in $imgs {
+		#{"&." + $img} {
+			background: image-url("#{$img}.gif");
+		}
+	}
+}

@@ -1,4 +1,4 @@
-require "./rb/isFile.rb"
+require "./rb/develo.rb"
 
 http_path = "/"
 css_dir = "html/css/"
