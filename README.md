@@ -7,7 +7,9 @@ compass.develo
 ------
 1. config.rbに記述
 
-	require "./rb/develo.rb"
+		require "./rb/develo.rb"
+
+
 
 isFile
 ------
@@ -15,9 +17,10 @@ isFile
 ※ fileNameはcompass watch している場所からのパスになります。
 
 2. 実際に使う
-	@if isFile('fileName') == 'true' {
 
-	}
+		@if isFile('fileName') == 'true' {
+
+		}
 
 fileList
 ------
